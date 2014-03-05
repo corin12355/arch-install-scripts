@@ -51,7 +51,7 @@ echo '$USER ALL=(ALL) ALL' >> /etc/sudoers
 # Add SSH key
 echo 'Adding SSH key to $USER'
 mkdir -p /home/$USER/.ssh
-wget https://raw.github.com/TheReverend403/arch-install-scripts/id_rsa.pub -O /home/$USER/.ssh/authorized_keys
+wget https://raw.github.com/TheReverend403/arch-install-scripts/master/id_rsa.pub -O /home/$USER/.ssh/authorized_keys
 chown -R $USER /home/$USER/.ssh
 
 # Install ohmyzsh
@@ -64,7 +64,7 @@ chown -R $USER /home/$USER/.zshrc
 
 # Add custom tmux settings
 echo 'Adding custom tmux settings'
-wget https://raw.github.com/TheReverend403/arch-install-scripts/tmux.conf -O /home/$USER/.tmux.conf
+wget https://raw.github.com/TheReverend403/arch-install-scripts/master/tmux.conf -O /home/$USER/.tmux.conf
 chown -R $USER /home/$USER/.tmux.conf
 
 echo 'Setup complete. Remember to reboot to fully enable locale/font changes.'
