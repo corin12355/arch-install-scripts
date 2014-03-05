@@ -68,3 +68,4 @@ wget https://raw.github.com/TheReverend403/arch-install-scripts/master/tmux.conf
 chown -R $USER /home/$USER/.tmux.conf
 
 echo 'Setup complete. Remember to reboot to fully enable locale/font changes.'
+echo 'Also common reminder that u r homosex'
